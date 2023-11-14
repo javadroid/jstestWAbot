@@ -344,28 +344,30 @@ async function messageai(message, Client, message1) {
 
 
 const OpenAI = require("openai");
+const { Configuration, OpenAIApi }= require("openai");
 
-const openAI = new OpenAI({
-  apiKey: "s" + "k" + "-U4up" + "GpuCHcDumrv6YCwsT3B" + "lbkFJ3NhuPspizsoSYbBQ4nWI"
-
+const configuration = new Configuration({
+  apiKey: "s"+"k"+"-U4up"+"GpuCHcDumrv6YCwsT3B"+"lbkFJ3NhuPspizsoSYbBQ4nWI"
+  
 });
+const openAI = new OpenAIApi(configuration);
 
-async function imaging(
-  sendmessage, Client,message1
-
+ async function imaging(
+  sendmessage,Client
+ 
 ) {
-  const { MessageMedia } = require('whatsapp-web.js');
+  const {  MessageMedia} = require('whatsapp-web.js');
   let replyToBeSent = "";
 
-  try {
-    const completion = await openAI.images.generate({
-      prompt: sendmessage, // completion based on this
-      n: 1,
-      size: "1024x1024",
-
-    });
-    console.log("replyToBeSent", completion.data);
-    replyToBeSent = completion.data[0].url;
+    try {
+      const completion = await openAI.createImage({
+        prompt: sendmessage, // completion based on this
+        n: 1,
+        size: "1024x1024",
+        
+      });
+      console.log("replyToBeSent",completion.data.data);
+        replyToBeSent = completion.data.data[0].url;
   } catch (error) {
     // console.error(error.response)
     if (error.response) {

@@ -42,3 +42,22 @@
 [1114/224721.839:WARNING:storage_block-inl.h(142)] Failed data load.
 [1114/235025.971:WARNING:backend_impl.cc(1759)] Destroying invalid entry.
 [1114/235025.973:WARNING:backend_impl.cc(1759)] Destroying invalid entry.
+[1115/002431.132:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[1115/002431.134:ERROR:disk_cache.cc(205)] Unable to create cache
+[1115/002908.197:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[1115/002908.197:ERROR:disk_cache.cc(205)] Unable to create cache
+[1115/003750.606:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003759.817:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003804.860:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003816.547:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003825.373:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003834.344:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003843.394:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003849.936:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003854.047:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003901.131:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003906.182:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003909.353:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003909.527:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003909.664:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[1115/003909.806:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.

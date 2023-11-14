@@ -1,9 +1,10 @@
-const OpenAI =require("openai") ;
+const { Configuration, OpenAIApi }= require("openai");
 
-const openAI = new OpenAI({
+const configuration = new Configuration({
   apiKey: "s"+"k"+"-U4up"+"GpuCHcDumrv6YCwsT3B"+"lbkFJ3NhuPspizsoSYbBQ4nWI"
   
 });
+const openAI = new OpenAIApi(configuration);
 
 export async function imaging(
   sendmessage,Client
@@ -13,14 +14,14 @@ export async function imaging(
   let replyToBeSent = "";
 
     try {
-      const completion = await openAI.images.generate({
+      const completion = await openAI.createImage({
         prompt: sendmessage, // completion based on this
         n: 1,
         size: "1024x1024",
         
       });
-      console.log("replyToBeSent",completion.data);
-        replyToBeSent = lcompletion.data[0].ur;
+      console.log("replyToBeSent",completion.data.data);
+        replyToBeSent = completion.data.data[0].url;
     } catch (error) {
       // console.error(error.response)
       if (error.response) {
